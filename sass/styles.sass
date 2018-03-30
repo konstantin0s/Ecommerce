@@ -22,7 +22,7 @@ $background: #c0c0c0
       text-transform: uppercase
       padding: 2em 0
       margin: 0
-      font-size: 4em
+      font-size: 5em
       line-height: .85
 
   .wrapper
@@ -65,9 +65,39 @@ $background: #c0c0c0
       width: 25%
       float: left
       display: inline-block
+      position: relative
       img
         width: 100%
         max-width: 100%
+      .resource_info
+        background: rgba($highlight, 0.85)
+        padding: 2em
+        height: 100%
+        width: 100%
+        position: absolute
+        top: auto
+        bottom: 0
+        h2
+          color: $white
+          font-size: 1.5em
+          line-height: 1
+          text-transform: uppercase
+          margin-bottom: 1em
+        .button
+          border: 2px solid $white
+          padding: 1em 1.5em
+          border-radius: .5em
+          color: $white
+          text-decoration: none
+          text-transform: uppercase
+          font-size: .9em
+          font-weight: 700
+        .price
+          display: inline
+          font-weight: 700
+          color: $main
+          padding-left: 1.5em
+
 
 @media only screen and (max-width: 1250px)
   .resources
@@ -75,11 +105,31 @@ $background: #c0c0c0
       width: 33.33%
 
 @media only screen and (max-width: 900px)
+.banner
+
+  h1
+    padding: 1.5em 0
+    font-size: 3.5em
+
+.nav
+  a, label
+    font-size: 1.1em
+    margin-right: 1em
+  #search
+    font-size: 1.1em
+    padding: 1.5em .5em
+
   .resources
     li
       width: 50%
 
 @media only screen and (max-width: 600px)
+  .banner
+    h1
+      font-size: 2.5em
+  .nav
+    a
+      display: none
   .resources
     li
       width: 100%
