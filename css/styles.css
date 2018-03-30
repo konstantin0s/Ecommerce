@@ -83,6 +83,10 @@
           text-transform: uppercase;
           font-size: 0.9em;
           font-weight: 700; }
+          * .resources li .resource_info .button:hover {
+            border: 2px solid #31323d;
+            color: #31323d;
+            transition: all 0.4s ease-in-out; }
         * .resources li .resource_info .price {
           display: inline;
           font-weight: 700;
